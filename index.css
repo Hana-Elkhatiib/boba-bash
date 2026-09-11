@@ -122,3 +122,24 @@ header .navbar{
 .home .box-container .box:hover{
     transform:translateY(-5px);
 }
+
+@media (max-width:600px){
+    .home .box-container{
+        display:grid;
+        grid-template-columns:repeat(2, 1fr);
+    }
+    
+    .home .box-container .box{
+        width:100%;
+    }
+
+    .search-form{
+        width:90%;
+        margin:0rem auto;
+    }
+
+    .search-form #search-box{
+        width:100%;
+        box-sizing:border-box;
+    }
+}
