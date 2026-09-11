@@ -124,6 +124,18 @@ header .navbar{
 }
 
 @media (max-width:600px){
+    .header{
+        display:flex;
+        align-items:center;
+        justify-content:space-between;
+        padding:1rem;
+    }
+
+    .logo{
+        font-size:1.5rem;
+        width:45%;
+    }
+
     .home .box-container{
         display:grid;
         grid-template-columns:repeat(2, 1fr);
@@ -135,13 +147,14 @@ header .navbar{
     }
 
     .search-form{
-        width:90%;
-        margin:0rem auto;
+        width:45%;
     }
 
     .search-form #search-box{
         width:100%;
-        height:45px;
+        height:35px;
+        font-size:0.9rem;
         box-sizing:border-box;
     }
+}
 }
