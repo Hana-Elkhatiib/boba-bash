@@ -128,6 +128,18 @@ header .navbar{
     transform: translateY(-8px) rotate(1deg) scale(1.03);
 }
 
+.no-results{
+    text-align: center;
+    font-size: 1.8rem;
+    color:#3333338f;
+    padding:4rem 0;
+    display: none;
+}
+
+.home .box-container .box.hide{
+    display: none;
+}
+
 @media (max-width:480px){
     header{
         display:flex;
