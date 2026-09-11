@@ -82,7 +82,8 @@ header .navbar{
     border: .1rem solid rgba(0,0,0, .1);
     position: relative;
     overflow:hidden;
-    transition: transform .2s ease-in-out;
+    transition: transform .3s ease-in-out;
+    transition: transform .3s ease-in-out, box-shadow .3s ease;
 }
 
 .home .box-container .box img{
@@ -120,7 +121,12 @@ header .navbar{
 }
 
 .home .box-container .box:hover{
-    transform:translateY(-5px);
+    transform:translateY(-8px), rotate(-1deg), scale(1.03);
+    box-shadow:0 1.2rem 2rem rgba(0,0,0, .25);
+}
+
+.home .box-container .box:nth-child(even):hover{
+    transform:translateY(-8px), rotate(-1deg), scale(1.03);
 }
 
 @media (max-width:480px){
